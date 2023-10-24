@@ -1,0 +1,9 @@
+<h1 class="text-center underline">Articles#index</h1>
+<h2 class="text-center text-2xl font-bold">Home</h2>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
